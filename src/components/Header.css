@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    height: 75px;
+}
+
+.img-first {
+    margin-left: 37px;
+    height: 100px;
+    width: 350px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+.auth-buttons h2 {
+    cursor: pointer;
+    color: rgb(100, 0, 100); 
+}
+
+.link {
+    margin-right: 20px; 
+    text-decoration: none; 
+    position: relative; 
+    padding-bottom: 3px; 
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: purple; 
+    transition: width 0.3s ease; 
+}
+
+.link:hover {
+    color: purple; 
+}
+
+.link:hover::after {
+    width: 100%; 
+}
